@@ -1,3 +1,5 @@
+/* şube sayacı start*/
+
 let counterDOM = document.getElementById("counter");
 let counterValue = 0;
 
@@ -11,17 +13,21 @@ function updateCounter() {
     }
 }
 
+/* şube sayacı end */
+
+/* slider start */
+
 let index = 0;
 let imageDom = document.getElementsByClassName("slideImage");
 let slideTimer;
 
 document.addEventListener("DOMContentLoaded", function () {
-    imageChanger();
-    slideTimer = setInterval(imageChanger, 3000);
+    OtoImageChanger();
+    slideTimer = setInterval(OtoImageChanger, 3000);
 });
 
-function imageChanger() {
-    for (i = 0; i < imageDom.length; i++) {
+function OtoImageChanger() {
+    for (let i = 0; i < imageDom.length; i++) {
         imageDom[i].style.display = "none";
     }
     index++;
@@ -30,3 +36,20 @@ function imageChanger() {
     }
     imageDom[index - 1].style.display = "block";
 }
+
+function plusSlides(n){
+    clearInterval(slideTimer);
+   index +=n;
+   if (index > imageDom.length) {
+    index = 1;
+} else if(index < 1){
+index = imageDom.length;
+}
+for (let i = 0; i < imageDom.length; i++) {
+    imageDom[i].style.display = "none";
+}
+imageDom[index - 1].style.display = "block";
+slideTimer=setInterval(OtoImageChanger, 3000);
+}
+
+/* slider end */
