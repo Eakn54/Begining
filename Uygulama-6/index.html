@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köfteci YUSUF</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <div class="main-logo">
+                    <img src="https://kofteciyusuf.com/assets/dist/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="#">Ürünlerimiz</a></li>
+                        <li class="counter-li">
+                            <a href="#">
+                                <p class="counter-cl" id="counter">276</p>
+                                <span>
+                                    Şube
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="#">Kurumsal</a></li>
+                    </ul>
+                </div>
+                <div class="search-icon">
+                    <i class="ph ph-magnifying-glass"></i>
+
+                </div>
+                <div class="call-logos">
+                    <ul>
+                        <li class="call">
+                            <button>
+                                <i class="ph ph-phone-call"></i>
+                                <span>
+                                    <em>Sipariş Hattı</em>
+                                    <em>444 61 62</em>
+                                </span>
+                            </button>
+
+                        </li>
+                        <li class="order">
+                            <button>
+                                <img src="data:img/png;base64,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"
+                                    alt="">
+                                <span>
+                                    <em>Online</em>
+                                    <em>Sipariş Ver</em>
+                                </span>
+                            </button>
+                        </li>
+                        <li class="shop">
+                            <button>
+                                <i class="ph ph-shopping-cart"></i>
+                                <i class="shop-counter">0</i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="slideshow-container">
+            <div class="swiper-slide">
+                <a href="#"><img class="slideİmage" src=".//images/1.jpg" alt="image"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="slideİmage" src=".//images/2.jpg" alt="image"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="slideİmage" src=".//images/3.jpg" alt="image"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="slideİmage" src=".//images/4.jpg" alt="image"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="slideİmage" src=".//images/5.jpg" alt="image"></a>
+            </div>
+            <i class="bi bi-caret-right" id="next" onclick="plusSlides(-1)"></i>
+            <i class="bi bi-caret-left" id="prev" onclick="plusSlides(-1)"></i>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

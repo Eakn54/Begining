@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+}
+
+
+/* navbar end */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 109px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+.menu-list ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 10px;
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-list ul .counter-li {
+    align-self: center;
+    position: relative;
+}
+
+.menu-list ul .counter-li p {
+    position: absolute;
+    top: -20px;
+    left: 3px;
+}
+
+.search-icon i {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.call-logos ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    column-gap: 30px;
+}
+
+.call-logos button {
+    border-radius: 10px;
+    border: none;
+}
+
+.call-logos .call button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: orange;
+    height: 60px;
+    width: 150px;
+
+}
+
+.call-logos .order button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: red;
+    height: 60px;
+    width: 173px;
+}
+
+.call-logos .shop button {
+    background-color: #585858;
+    height: 60px;
+    width: 70px;
+    position: relative;
+}
+
+.call-logos .shop button i {
+    color: white;
+    font-size: 36px;
+}
+
+.call-logos .shop button .shop-counter {
+    color: white;
+    background-color: red;
+    text-align: center;
+    border-radius: 50%;
+    min-width: 22px;
+    font-size: 16px;
+    padding: 3px 0 2px;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+.call-logos .call button i {
+    font-size: 30px;
+    color: white;
+}
+
+
+.call-logos span em {
+    display: block;
+    color: white;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.call-logos .call span em:not(:last-child) {
+    color: #9a560a;
+}
+
+.call-logos span em:last-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* navbar end */
+/* slider start */
+.slideshow-container {
+    background-color: white;
+    position: relative;
+}
+
+.slideİmage {
+    display: none;
+}
+
+.slideshow-container i {
+    color: black;
+    position: absolute;
+    font-size: 60px;
+    cursor: pointer;
+    top: 130px;
+
+}
+
+.slideshow-container #next {
+    left: 90%;
+}
+
+.slideshow-container #prev {
+    left: 10%;
+}
